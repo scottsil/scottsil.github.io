@@ -28,27 +28,57 @@
   vertical-align: middle;
   display: inline-block;
   color: white;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07); }
   .hero h1 {
     font-weight: 500;
     font-size: 56px;
     font-style: italic;
-    margin-bottom: 0;
-    letter-spacing: 0.02em; }
+    margin: 10% 0 0 0;
+    letter-spacing: 0.02em;
+    opacity: 0.9;
+    word-wrap: break-word; }
   .hero h2 {
     font-weight: 100;
     font-size: 16px;
-    opacity: 0.7;
-    letter-spacing: 0.14em;
+    opacity: 0.75;
+    letter-spacing: 0.1em;
     line-height: 1.1; }
   .hero hr {
-    color: white;
     opacity: 0.75;
     width: 72px;
     height: 1px;
     border: none;
     border-bottom: 1px solid white;
-    margin-top: 70px; }
+    margin-top: 80px; }
+  .hero ul {
+    list-style-type: none;
+    margin: 80px 0 0 0;
+    padding: 0; }
+  .hero li {
+    display: inline-block; }
+  .hero a {
+    background-image: url("../images/social-sprite.png");
+    background-image: url("../images/social-sprite.png");
+    height: 19px;
+    background-size: 65px 19px;
+    display: inline-block;
+    text-indent: -9999px;
+    opacity: 0.7; }
+
+.twitter {
+  margin-left: 0;
+  width: 21px; }
+
+.dribbble {
+  width: 21px;
+  background-position: -21px 0px;
+  margin-left: 25px; }
+
+.email {
+  width: 24px;
+  background-position: -41px 0px;
+  margin-left: 25px; }
 
 .gradient {
   background-color: #2db5d0;
@@ -64,3 +94,20 @@
   background-position: center;
   opacity: 0.95;
   z-index: 1; }
+
+@media (max-width: 800px) {
+  .hero h1 {
+    font-size: 40px; } }
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 34px;
+    margin: 0; }
+
+  .hero h2 {
+    font-size: 12px; }
+
+  .hero hr {
+    margin-top: 40px; }
+
+  .hero ul {
+    margin-top: 44px; } }
