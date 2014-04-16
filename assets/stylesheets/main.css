@@ -2,3 +2,51 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/bg.jpg");
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  text-rendering: optimizeLegibility; }
+
+.wrapper:before {
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%; }
+
+.hero {
+  z-index: 2;
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  color: white; }
+  .hero h1 {
+    font-weight: 700;
+    font-size: 56px;
+    font-style: italic; }
+  .hero h2 {
+    font-weight: 300;
+    font-size: 16px; }
+
+.gradient {
+  background-color: #2db5d0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-10%, #2db5d0), color-stop(95%, #12cfae));
+  background-image: -webkit-linear-gradient(-285deg, #2db5d0 -10%, #12cfae 95%);
+  background-image: linear-gradient(15deg,#2db5d0 -10%, #12cfae 95%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.95;
+  z-index: 1; }
