@@ -20,7 +20,7 @@
 	height: 100%
 
 .hero
-	z-index: 2
+	z-index: 3
 	position: relative
 	vertical-align: middle
 	display: inline-block
@@ -35,12 +35,16 @@
 		letter-spacing: 0.02em
 		opacity: 0.9
 		word-wrap: break-word
+		@include animation-duration(1.4s)
+		@include animation-delay(0.2s)
 	h2
 		font-weight: 100
 		font-size: 16px
 		opacity: 0.75
 		letter-spacing: 0.1em
 		line-height: 1.1
+		@include animation-delay(2s)
+		@include animation-duration(4s)
 	hr
 		opacity: 0.75
 		width: 72px
@@ -48,10 +52,14 @@
 		border: none
 		border-bottom: 1px solid white
 		margin-top: 80px
+		@include animation-delay(2s)
+		@include animation-duration(4s)
 	ul
 		list-style-type: none
 		margin: 80px 0 0 0
 		padding: 0
+		@include animation-delay(2s)
+		@include animation-duration(4s)
 	li
 		display: inline-block
 	a
@@ -61,6 +69,11 @@
 		display: inline-block
 		text-indent: -9999px
 		opacity: 0.7
+		@include transition-property(opacity)
+		@include transition-duration(0.10s)
+		@include transition-timing-function(ease-in)
+	a:hover
+		opacity: 1
 
 .twitter
 	margin-left: 0
@@ -72,8 +85,8 @@
 	margin-left: 25px
 
 .email
-	width: 24px
-	background-position: -41px 0px
+	width: 23px
+	background-position: -42px 0px
 	margin-left: 25px
 
 .gradient
@@ -88,13 +101,27 @@
 	opacity: 0.95
 	z-index: 1
 
+.solid
+	background-color: #2d393b
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-size: cover
+	background-position: center
+	z-index: 2
+	@include animation-delay(2s)
+	@include animation-duration(4s !important)
+	@include animation-timing-function(ease)
+
 @media (max-width: 800px)
 	.hero h1
 		font-size: 40px
 
 @media (max-width: 400px)
 	.hero h1
-		font-size: 34px
+		font-size: 30px
 		margin: 0
 
 	.hero h2
