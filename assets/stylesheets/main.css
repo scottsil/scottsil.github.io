@@ -37,48 +37,24 @@
     margin: 10% 0 0 0;
     letter-spacing: 0.02em;
     opacity: 0.9;
-    word-wrap: break-word;
-    -webkit-animation-duration: 1.4s;
-    -moz-animation-duration: 1.4s;
-    animation-duration: 1.4s;
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    animation-delay: 0.2s; }
+    word-wrap: break-word; }
   .hero h2 {
     font-weight: 100;
     font-size: 16px;
     opacity: 0.75;
     letter-spacing: 0.1em;
-    line-height: 1.1;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    animation-duration: 1.5s; }
+    line-height: 1.1; }
   .hero hr {
     opacity: 0.75;
     width: 72px;
     height: 1px;
     border: none;
     border-bottom: 1px solid white;
-    margin-top: 80px;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    animation-duration: 1.5s; }
+    margin-top: 80px; }
   .hero ul {
     list-style-type: none;
     margin: 80px 0 0 0;
-    padding: 0;
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    animation-duration: 1.5s; }
+    padding: 0; }
   .hero li {
     display: inline-block; }
   .hero a {
@@ -88,16 +64,7 @@
     background-size: 65px 19px;
     display: inline-block;
     text-indent: -9999px;
-    opacity: 0.7;
-    -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    transition-property: opacity;
-    -webkit-transition-duration: 0.1s;
-    -moz-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -webkit-transition-timing-function: ease-in;
-    -moz-transition-timing-function: ease-in;
-    transition-timing-function: ease-in; }
+    opacity: 0.7; }
   .hero a:hover {
     opacity: 1; }
 
@@ -129,27 +96,6 @@
   background-position: center;
   opacity: 0.95;
   z-index: 1; }
-
-.solid {
-  background-color: #15404d;
-  opacity: 0.5;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 2;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-duration: 1.5s !important;
-  -moz-animation-duration: 1.5s !important;
-  animation-duration: 1.5s !important;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  animation-timing-function: ease; }
 
 @media (max-width: 800px) {
   .hero h1 {
