@@ -19,7 +19,7 @@
 	display: inline-block
 	height: 100%
 
-.hero
+#hero
 	z-index: 3
 	position: relative
 	vertical-align: middle
@@ -35,6 +35,10 @@
 		letter-spacing: 0.02em
 		opacity: 0.9
 		word-wrap: break-word
+		@include animation-duration(1.4s)
+		@include animation-delay(0.2s)
+	div.secondary
+		opacity: 0
 	h2
 		font-weight: 100
 		font-size: 16px
@@ -92,6 +96,18 @@
 	background-position: center
 	opacity: 0.93
 	z-index: 1
+
+.solid
+	background-color: #15404d
+	opacity: 1
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-size: cover
+	background-position: center
+	z-index: 2
 
 @media (max-width: 800px)
 	.hero h1
