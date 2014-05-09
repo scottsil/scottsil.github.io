@@ -66,10 +66,10 @@
   .hero li {
     display: inline-block; }
   .hero a {
-    background-image: url("../images/social-sprite.png");
-    background-image: url("../images/social-sprite.png");
+    background-image: url("../images/social-sprite-2.png");
+    background-image: url("../images/social-sprite-2.png");
     height: 19px;
-    background-size: 65px 19px;
+    background-size: 83px 19px;
     display: inline-block;
     text-indent: -9999px;
     opacity: 0.7;
@@ -96,7 +96,12 @@
 
 .email {
   width: 23px;
-  background-position: -42px 0px;
+  background-position: -41px 0px;
+  margin-left: 25px; }
+
+.linkedin {
+  width: 19px;
+  background-position: -64px 0px;
   margin-left: 25px; }
 
 .gradient {
